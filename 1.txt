@@ -1,0 +1,61 @@
+preciso fazer algumas consultas no mongodb, o banco se chama clash e a collection se chama clash, tratase de uma base de dados com partidas de clash royal onde p1_1 ate p1_8 representa as cartas do jogador 1 enquanto p2_1 ate p2_8 representa as cartas do jogador 2, as cartao sao reconhecidas pelos nomes, exemplo: "Valkyrie", "Magic Archer", "Bomb Tower", "Miner", "Wall Breakers", "Bats", "The Log", "Skeletons", "Graveyard", "Ice Wizard", "Baby Dragon", "Barbarian Barrel", "Tombstone", "Knight", "Tornado", "Poison", a base ainda contem o resultado das partidas p1_crowns e p2_crowns, preciso que as consultas usem o maximo de sintaxe do mongodb que possivel
+
+
+dia,coisa,p1_cod,p1_trophies,p1_crowns,p1_1,p1_2,p1_3,p1_4,p1_5,p1_6,p1_7,p1_8,p2_cod,p2_trophies,p2_crowns,p2_1,p2_2,p2_3,p2_4,p2_5,p2_6,p2_7,p2_8
+
+
+
+
+
+preciso fazer algumas consultas no mongodb, o banco se chama clash, tratase de uma base de dados com partidas de clash royal, que tem 2 collection, a 1 se chama cartas, com os dados das cartas:
+{
+  "_id": {
+    "$oid": "66fb4baff9b76b11bc2d673e"
+  },
+  "key": "knight",
+  "name": "Knight",
+  "sc_key": "Knight",
+  "elixir": 3,
+  "type": "Troop",
+  "rarity": "Common",
+  "arena": 0,
+  "description": "A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.",
+  "id": 26000000,
+  "evolved_spells_sc_key": "Knight_EV1",
+  "is_evolved": false
+}
+a segunda sechama partidas e contem dados das partidas:
+{
+  "_id": {
+    "$oid": "66fb4f64f9b76b11bc2d67b6"
+  },
+  "dia": "20231106T000000.000Z",
+  "p1_cod": "8VV8U9PJ0",
+  "p1_trophies": 8665,
+  "p1_crowns": 0,
+  "p1_1": 26000064,
+  "p1_2": 26000048,
+  "p1_3": 28000001,
+  "p1_4": 27000012,
+  "p1_5": 26000049,
+  "p1_6": 28000004,
+  "p1_7": 26000021,
+  "p1_8": 26000055,
+  "p2_cod": "2UJG9JJJ8",
+  "p2_trophies": 8719,
+  "p2_crowns": 1,
+  "p2_1": 26000064,
+  "p2_2": 27000000,
+  "p2_3": 26000021,
+  "p2_4": 26000030,
+  "p2_5": 28000014,
+  "p2_6": 26000010,
+  "p2_7": 26000065,
+  "p2_8": 28000011
+}
+
+
+
+e a collection se chama clash,e p1_1 ate p1_8 representa as cartas do jogador 1 enquanto p2_1 ate p2_8 representa as cartas do jogador 2, as cartao sao reconhecidas pelos nomes, exemplo: "Valkyrie", "Magic Archer", "Bomb Tower", "Miner", "Wall Breakers", "Bats", "The Log", "Skeletons", "Graveyard", "Ice Wizard", "Baby Dragon", "Barbarian Barrel", "Tombstone", "Knight", "Tornado", "Poison", a base ainda contem o resultado das partidas p1_crowns e p2_crowns, preciso que as consultas usem o maximo de sintaxe do mongodb que possivel
+
+
